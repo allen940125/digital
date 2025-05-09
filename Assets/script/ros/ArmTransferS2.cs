@@ -60,8 +60,7 @@ public class ArmTransferS2 : MonoBehaviour
         // Debug.Log("jointPositions.Length : " + jointPositions.Length);
         for (int i = 0; i < jointPositions.Length; i++)
         {
-            if (jointPositions[i] > 0)
-                jointPositions[i] = jointPositions[i] * Mathf.Rad2Deg;
+            jointPositions[i] = jointPositions[i] * Mathf.Rad2Deg;
             if(i == jointPositions.Length - 1 && haveGripper == true){
                 data.Add(jointPositions[i]);
                 data.Add(jointPositions[i]);

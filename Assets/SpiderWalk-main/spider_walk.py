@@ -215,8 +215,8 @@ def main():
         elif keyboard.is_pressed('d'):
             rotate_clockwise(ros_client)
             last_trigger_time = time.time()
-        # elif keyboard.is_pressed('space'):
-        #     jump(ros_client)
+        elif keyboard.is_pressed('space'):
+            jump(ros_client)
         elif time.time() - last_trigger_time >= duration_threshold:
             resetPosition(ros_client)
             last_trigger_time = time.time()
